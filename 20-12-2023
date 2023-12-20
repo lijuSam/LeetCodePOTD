@@ -1,0 +1,15 @@
+2706. Buy Two Chocolates (LEET CODE PTOD)
+Intution is very clear sort the array and compare the money with first and second element of the array 
+
+class Solution {
+public:
+    int buyChoco(vector<int>& prices, int money) {
+
+        sort(prices.begin(),prices.end());
+       
+         
+        return (money>=(prices[0]+prices[1])) ? money-(prices[0]+prices[1]):money; 
+               
+        
+    }
+};
